@@ -1,0 +1,86 @@
+body {
+  background: #272727;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://source.unsplash.com/1600x900/?stationary);
+  opacity: .2;
+  z-index: -1;
+}
+
+.container * {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+
+.container .back-link {
+  text-decoration: none;
+  margin-top: 12px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.container .back-link:hover {
+  color: orangered;
+  font-size: 25px;
+}
+
+.container .wa-link {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.container .wa-link:hover {
+  color: green;
+}
+
+.display-1 {
+  color: orangered;
+  -webkit-text-decoration: underline 5px solid transparent;
+          text-decoration: underline 5px solid transparent;
+  -webkit-transition: -webkit-text-decoration 0.5s ease-in-out;
+  transition: -webkit-text-decoration 0.5s ease-in-out;
+  transition: text-decoration 0.5s ease-in-out;
+  transition: text-decoration 0.5s ease-in-out, -webkit-text-decoration 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  text-underline-offset: 10px;
+}
+
+.display-1:hover {
+  -webkit-text-decoration: underline 5px solid orangered;
+          text-decoration: underline 5px solid orangered;
+  font-size: 100px;
+}
+
+.display-6 {
+  -webkit-transition: -webkit-text-decoration 0.5s ease-in-out;
+  transition: -webkit-text-decoration 0.5s ease-in-out;
+  transition: text-decoration 0.5s ease-in-out;
+  transition: text-decoration 0.5s ease-in-out, -webkit-text-decoration 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  text-underline-offset: 10px;
+}
+
+.display-6:hover {
+  font-size: 50px;
+  -webkit-text-decoration: underline 2.5px solid white;
+          text-decoration: underline 2.5px solid white;
+}
+/*# sourceMappingURL=about.css.map */

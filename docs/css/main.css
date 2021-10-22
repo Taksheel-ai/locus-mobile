@@ -1,0 +1,43 @@
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+body * {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+
+.carousel-item > img {
+  opacity: 50%;
+  height: 95vh;
+}
+
+.container-fluid h1 {
+  color: #fff;
+}
+
+@-webkit-keyframes pg-trans {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0vh;
+  }
+}
+
+@keyframes pg-trans {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

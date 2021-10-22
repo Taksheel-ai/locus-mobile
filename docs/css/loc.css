@@ -1,0 +1,31 @@
+body {
+  background: #272727;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://source.unsplash.com/1600x900/?maps);
+  opacity: .2;
+  z-index: -1;
+}
+
+.container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.container .map {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=loc.css.map */
