@@ -1,0 +1,73 @@
+@import '_config';
+
+body{
+    background: rgb(39, 39, 39);
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image:  url(https://source.unsplash.com/1600x900/?stationary);
+    opacity: .2;
+    z-index: -1;
+}
+
+.container{
+    // background: transparent;
+    *{
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        // z-index: 100;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+
+    .back-link{
+        text-decoration: none;
+        margin-top: 12px;
+        transition: 0.2s ease;
+
+        &:hover{
+            color: orangered;
+            font-size: 25px;
+        }
+    }
+
+    .wa-link{
+        transition: 0.2s ease;
+    }
+
+    .wa-link:hover{
+        color: green;
+    }
+}
+
+.display-1{
+    color: orangered;
+    text-decoration: underline 5px solid transparent;
+    transition: text-decoration 0.5s ease-in-out;
+    transition: 0.5s ease;
+    text-underline-offset: 10px;
+
+    &:hover{
+        text-decoration: underline 5px solid orangered;
+        font-size: 100px;
+    }
+}
+
+.display-6{
+    transition: text-decoration 0.5s ease-in-out;
+    transition: 0.5s ease;
+    text-underline-offset: 10px;
+    &:hover{
+        font-size: 50px;
+        text-decoration: underline 2.5px solid white;
+    }
+}
