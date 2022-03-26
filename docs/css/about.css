@@ -83,4 +83,16 @@ body::before {
   -webkit-text-decoration: underline 2.5px solid white;
           text-decoration: underline 2.5px solid white;
 }
+
+.sell-your-old-phone {
+  color: white;
+  text-decoration: none;
+}
+
+.sell-your-old-phone:hover {
+  color: orange;
+  text-decoration: underline;
+  transition: 0.2s ease;
+}
+
 /*# sourceMappingURL=about.css.map */
